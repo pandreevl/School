@@ -5,7 +5,8 @@
     xmlns:courses="clr-namespace:Modules.Courses.Views"
     xmlns:office="clr-namespace:Modules.OfficeAssignments.Views"
     xmlns:onlineCourse="clr-namespace:Modules.OnlineCourses.Views"
-     xmlns:onsiteCourse="clr-namespace:Modules.OnsiteCourses.Views"
+    xmlns:onsiteCourse="clr-namespace:Modules.OnsiteCourses.Views"
+    xmlns:person="clr-namespace:Modules.Persons.Views"
     Title="MainWindow" Height="377" Width="568">
     <Grid>
         <TabControl>
@@ -24,6 +25,10 @@
             <TabItem Header="Osite Course">
                 <onsiteCourse:OnsiteCoursesList x:Name="OnsiteCoursesUserControl"/>
             </TabItem>
+            <TabItem Header="Person">
+                <person:PersonList x:Name="PersonsUserControl"/>
+            </TabItem>
+            
         </TabControl>
     </Grid>
 </Window>
