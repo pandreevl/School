@@ -1,4 +1,5 @@
 ﻿Imports Modules.Departments.ViewModels
+Imports Modules.Courses.ViewModels 
 Class MainWindow
     Sub New()
 
@@ -7,6 +8,6 @@ Class MainWindow
 
         ' Add any initialization after the InitializeComponent() call.
         Me.DepartmenstUserControl.MainGrid.DataContext = New DepartmentsViewModel()
-
+        Me.CoursesUserControl.MainGrid.DataContext = New CoursesViewModel()
     End Sub
 End Class

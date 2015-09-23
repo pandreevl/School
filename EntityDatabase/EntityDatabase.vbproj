@@ -141,7 +141,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Modules\Courses\Views\CoursesList.xaml">
+    <Page Include="Modules\Courses\Views\CourseList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,8 +171,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\Courses\ViewsModels\CoursesViewModel.vb" />
-    <Compile Include="Modules\Courses\Views\CoursesList.xaml.vb">
-      <DependentUpon>CoursesList.xaml</DependentUpon>
+    <Compile Include="Modules\Courses\Views\CourseList.xaml.vb">
+      <DependentUpon>CourseList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Modules\Departments\ViewModels\DepartmentsViewModel.vb" />
     <Compile Include="Modules\Departments\Views\DepartmentsList.xaml.vb">
