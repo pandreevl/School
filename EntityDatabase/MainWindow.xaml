@@ -5,5 +5,19 @@
     Title="MainWindow" Height="377" Width="568">
     <Grid>
         <departments:DepartmentsList x:Name="DepartmenstUserControl"/>
+        <TabControl HorizontalAlignment="Left" Height="326" Margin="53,10,0,0" VerticalAlignment="Top" Width="497">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="134*"/>
+                        <ColumnDefinition Width="357*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>

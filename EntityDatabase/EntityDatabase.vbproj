@@ -85,8 +85,20 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BusinessLogic\Helpers\ViewModelBase.vb" />
+    <Compile Include="BusinessLogic\Services\Implementations\CourseService.vb" />
     <Compile Include="BusinessLogic\Services\Implementations\DepartmentService.vb" />
+    <Compile Include="BusinessLogic\Services\Implementations\OfficeAssignmentService.vb" />
+    <Compile Include="BusinessLogic\Services\Implementations\OnlineCourseService.vb" />
+    <Compile Include="BusinessLogic\Services\Implementations\OnsiteCourseService.vb" />
+    <Compile Include="BusinessLogic\Services\Implementations\PersonService.vb" />
+    <Compile Include="BusinessLogic\Services\Implementations\StudentGradeService.vb" />
+    <Compile Include="BusinessLogic\Services\Interfaces\ICourseService.vb" />
     <Compile Include="BusinessLogic\Services\Interfaces\IDepartmentService.vb" />
+    <Compile Include="BusinessLogic\Services\Interfaces\IOfficeAssignmentService.vb" />
+    <Compile Include="BusinessLogic\Services\Interfaces\IOnlineCourseService.vb" />
+    <Compile Include="BusinessLogic\Services\Interfaces\IOnsiteCourseService.vb" />
+    <Compile Include="BusinessLogic\Services\Interfaces\IPersonService.vb" />
+    <Compile Include="BusinessLogic\Services\Interfaces\IStudentGradeService.vb" />
     <Compile Include="BusinessLogic\Services\ServiceLocator.vb" />
     <Compile Include="BusinessObjects\Helpers\DataContext.vb" />
     <Compile Include="BusinessObjects\Models\Course.vb">
@@ -129,6 +141,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Modules\Courses\Views\CoursesList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Modules\Departments\Views\DepartmentsList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -154,6 +170,10 @@
     <Import Include="System.Windows.Navigation" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\Courses\ViewsModels\CoursesViewModel.vb" />
+    <Compile Include="Modules\Courses\Views\CoursesList.xaml.vb">
+      <DependentUpon>CoursesList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Departments\ViewModels\DepartmentsViewModel.vb" />
     <Compile Include="Modules\Departments\Views\DepartmentsList.xaml.vb">
       <DependentUpon>DepartmentsList.xaml</DependentUpon>
@@ -210,6 +230,17 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Modules\OfficeAssignments\ViewModels\" />
+    <Folder Include="Modules\OfficeAssignments\Views\" />
+    <Folder Include="Modules\OnlineCourses\ViewModels\" />
+    <Folder Include="Modules\OnlineCourses\Views\" />
+    <Folder Include="Modules\OnsiteCourses\ViewModels\" />
+    <Folder Include="Modules\OnsiteCourses\Views\" />
+    <Folder Include="Modules\Persons\ViewModels\" />
+    <Folder Include="Modules\Persons\Views\" />
+    <Folder Include="Modules\StudenGrade\ViewModels\" />
+    <Folder Include="Modules\StudenGrade\Views\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
