@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:departments="clr-namespace:Modules.Departments.Views"
     xmlns:courses="clr-namespace:Modules.Courses.Views"
+    xmlns:office="clr-namespace:Modules.OfficeAssignments.Views"
     Title="MainWindow" Height="377" Width="568">
     <Grid>
         <TabControl>
@@ -12,7 +13,9 @@
             <TabItem Header="Courses">
                 <courses:CourseList x:Name="CoursesUserControl"/>
             </TabItem>
+            <TabItem Header="Ofice">
+                <office:OfficeAssignmentList x:Name="OfficeAssignmentUserControl"/>
+            </TabItem>
         </TabControl>
-
     </Grid>
 </Window>

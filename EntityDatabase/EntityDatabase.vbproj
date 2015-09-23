@@ -149,6 +149,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Modules\OfficeAssignments\Views\OfficeAssignmentList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Import Include="System.Threading.Tasks" />
@@ -177,6 +181,10 @@
     <Compile Include="Modules\Departments\ViewModels\DepartmentsViewModel.vb" />
     <Compile Include="Modules\Departments\Views\DepartmentsList.xaml.vb">
       <DependentUpon>DepartmentsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OfficeAssignments\ViewModels\OfficeAssignmentsViewModel.vb" />
+    <Compile Include="Modules\OfficeAssignments\Views\OfficeAssignmentList.xaml.vb">
+      <DependentUpon>OfficeAssignmentList.xaml</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb">
       <SubType>Code</SubType>
@@ -231,8 +239,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Modules\OfficeAssignments\ViewModels\" />
-    <Folder Include="Modules\OfficeAssignments\Views\" />
     <Folder Include="Modules\OnlineCourses\ViewModels\" />
     <Folder Include="Modules\OnlineCourses\Views\" />
     <Folder Include="Modules\OnsiteCourses\ViewModels\" />
