@@ -2,6 +2,8 @@
 Imports Modules.Courses.ViewModels
 Imports Modules.OfficeAssignments.ViewModels
 Imports Modules.OnlineCourses.ViewModels
+Imports Modules.OnsiteCourses.ViewModels
+
 Class MainWindow
     Sub New()
 
@@ -13,6 +15,8 @@ Class MainWindow
         Me.CoursesUserControl.MainGrid.DataContext = New CoursesViewModel()
         Me.OfficeAssignmentUserControl.MainGrid.DataContext = New OfficeAssignmentsViewModel()
         Me.OnlineCoursesUserControl.MainGrid.DataContext = New OnlineCoursesViewModel()
+        Me.OnsiteCoursesUserControl.MainGrid.DataContext = New OnsiteCoursesViewModel()
+
 
     End Sub
 End Class
