@@ -5,6 +5,7 @@ Imports Modules.OnlineCourses.ViewModels
 Imports Modules.OnsiteCourses.ViewModels
 Imports Modules.Persons.ViewModels
 
+
 Class MainWindow
     Sub New()
 

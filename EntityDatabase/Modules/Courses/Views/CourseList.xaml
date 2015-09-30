@@ -13,7 +13,7 @@
                 <DataGridTextColumn x:Name="CourseIdColumn" Binding="{Binding Path=CourseID}" Header="ID" Width="SizeToHeader"/>
                 <DataGridTextColumn x:Name="TitleColumn" Binding="{Binding Path=Title}" Header="Title" Width="SizeToHeader"/>
                 <DataGridTextColumn x:Name="CreditsColumn" Binding="{Binding Path=Credits}" Header="Credits" Width="SizeToHeader"/>
-                <DataGridTextColumn x:Name="DepartamentColumn" Binding="{Binding Path=DepartmentID}" Header="Department ID" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="DepartamentColumn" Binding="{Binding Path=Department.Name}" Header="Department ID" Width="SizeToHeader"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
