@@ -7,7 +7,7 @@
     xmlns:onlineCourse="clr-namespace:Modules.OnlineCourses.Views"
     xmlns:onsiteCourse="clr-namespace:Modules.OnsiteCourses.Views"
     xmlns:person="clr-namespace:Modules.Persons.Views"
-    Title="MainWindow" Height="377" Width="568">
+    Title="MainWindow" Height="455" Width="568">
     <Grid>
         <TabControl>
             <TabItem Header="Departments">
@@ -26,9 +26,12 @@
                 <onsiteCourse:OnsiteCoursesList x:Name="OnsiteCoursesUserControl"/>
             </TabItem>
             <TabItem Header="Person">
-                <person:PersonList x:Name="PersonsUserControl"/>
+                
+                    <person:PersonList x:Name="PersonsUserControl"/>
+                
             </TabItem>
-            
+        
         </TabControl>
+        
     </Grid>
 </Window>

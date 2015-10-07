@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="348" d:DesignWidth="569">
-    <Grid Name="MainGrid">
+    <Grid Name="MainGrid" Margin="0,0,0,-48">
         <DataGrid HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top"
                   ItemsSource="{Binding Persons}" Height="284" Width="512"
                   AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected">
@@ -16,6 +16,8 @@
                 <DataGridTextColumn x:Name="HireDateColumn" Binding="{Binding Path=HireDate}" Header="Hire Date" Width="SizeToHeader"/>
                 <DataGridTextColumn x:Name="EnrollColumn" Binding="{Binding Path=EnrollmentDate}" Header="Enroll " Width="SizeToHeader"/>
             </DataGrid.Columns>
-        </DataGrid>   
+        </DataGrid>
+        <Button Content="Agregar" Command="{Binding InsertCommand}" HorizontalAlignment="Left" Margin="462,366,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.107,-0.65"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="346,366,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.107,-0.65"/>
     </Grid>
 </UserControl>
