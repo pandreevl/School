@@ -137,7 +137,7 @@
     <Compile Include="BusinessObjects\Models\StudentGrade.vb">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
-    <Compile Include="Estructure\Command\Commands.vb" />
+    <Compile Include="Estructure\Helpers\Command.vb" />
     <Compile Include="MainWindow.xaml.vb">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -162,7 +162,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Modules\Persons\Views\NewPersons.xaml">
+    <Page Include="Modules\Persons\Views\NewPersonList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -211,10 +211,10 @@
     <Compile Include="Modules\OnsiteCourses\Views\OnsiteCoursesList.xaml.vb">
       <DependentUpon>OnsiteCoursesList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Persons\ViewModels\NewPerson.vb" />
+    <Compile Include="Modules\Persons\ViewModels\NewPersonViewModel.vb" />
     <Compile Include="Modules\Persons\ViewModels\PersonViewModel.vb" />
-    <Compile Include="Modules\Persons\Views\NewPersons.xaml.vb">
-      <DependentUpon>NewPersons.xaml</DependentUpon>
+    <Compile Include="Modules\Persons\Views\NewPersonList.xaml.vb">
+      <DependentUpon>NewPersonList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Modules\Persons\Views\PersonList.xaml.vb">
       <DependentUpon>PersonList.xaml</DependentUpon>
